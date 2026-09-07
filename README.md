@@ -13,11 +13,14 @@
 ### 🐧 Блок Linux
 #### 1.0 [Ядро linux и как оно работает](01_linux/linux_1.0.md#t_1.0)
 #### 2.0 [Ознакомление с терминалом и базовое выживание в нём](01_linux/linux_2.0.md#t_2.0)
+#### 3.0 [Структура файловой системы (FHS)](01_linux/linux_3.0.md#t_3.0)
+
+
 
 
 
 ## 🤝 Благодарности
-+ Структура данного репозитория в целом взята тут: https://www.youtube.com/watch?v=2FsmJrorp9Q&t=927s
++ Структура данного репозитория в целом взята тут: https://www.youtube.com/watch?v=2FsmJrorp9Q&t=927s и тут https://www.youtube.com/watch?v=8kvMficZrIo&t=6s
 
 + Блок Linux
     + Структура раздела по Linux основана на этой дорожной карте [Linux Roadmap](https://roadmap.sh/linux)
