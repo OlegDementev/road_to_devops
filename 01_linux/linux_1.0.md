@@ -38,7 +38,7 @@ ls /boot         # здесь лежат файлы ядра (vmlinuz) и initra
 ### Защитные кольца <a id="t_1.2"></a>
 Это аппаратно-реализованный механизм, встроенный в процессор, который делит код на уровни привилегий. В архитектуре `x86` таких уровней четыре: `Ring 0, 1, 2, 3`.  
 
-![linux_protection_rings.png](..\resources\images\linux_protection_rings.png)  
+![linux_protection_rings.png](../resources/images/linux_protection_rings.png)  
 
 + **Ring 0 ( Kernel Mode )** — абсолютная власть. Ядро работает здесь: прямой доступ к памяти, CPU, дискам, сетевой карте, любым инструкциям.
 
