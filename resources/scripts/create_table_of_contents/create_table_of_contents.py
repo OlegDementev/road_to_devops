@@ -4,7 +4,7 @@ import os
 INP_DIR_NAME = "01_linux"
 
 # Укажите имя файла.md для которого необходимо сделать оглавление
-INP_FILE_NAME = "3.0_Структура_файловой_системы_(FHS).md"
+INP_FILE_NAME = "6.0_Магия_текстовой_обработки_потоки_конвейеры_фильтры.md"
 
 # Путь до директории со скриптом
 SCRIPT_DIR_PATH = os.path.dirname(os.path.abspath(__file__))
