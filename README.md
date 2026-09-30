@@ -29,6 +29,44 @@
 #### 5.0 [Пользователи, группы, права доступа](02_linux/5.0_Пользователи,_группы,_права_доступа.md#title)
 #### 6.0 [Магия текстовой обработки: потоки, конвейеры и фильтры](02_linux/6.0_Магия_текстовой_обработки_потоки_конвейеры_фильтры.md#title)
 
+------------------------------------------------------------------------------
+#### ПЛАНЫ
+
+## 🐧 Linux
+- **Основы GNU/Linux и подготовка к RHCSA** — [YouTube-плейлист](https://www.youtube.com/watch?v=acqAnwP_WZU&list=PLisqB92_b4TlQH3jVGf6lrFMVqalCTjAQ&ab_channel=GNULinuxPro)
+
+## 🌐 Net/Sec
+- **Сети для самых маленьких** — [linkmeup.gitbook.io](https://linkmeup.gitbook.io/sdsm)
+- **TLS** — [Habr](https://habr.com/ru/articles/332294/)
+- **Что такое CVE** — [Habr](https://habr.com/ru/companies/pvs-studio/articles/678410/)
+
+## 🐳 Docker
+- **Docker: основы** — [Habr](https://habr.com/ru/companies/ruvds/articles/438796/)
+- **Различия между Docker, containerd, CRI-O и runc** — [Habr](https://habr.com/ru/companies/domclick/articles/566224/)
+
+## 📊 Monitoring
+- **Годный цикл статей про метрики** — [Habr](https://habr.com/ru/companies/tochka/articles/683608/)
+- **OpenSearch** — [Habr](https://habr.com/ru/articles/662527/)
+- **Prometheus и Grafana** — [Habr](https://habr.com/ru/articles/709204/)
+
+## 🔁 CI/CD
+- **GitLab CI** — [Habr](https://habr.com/ru/articles/498436/)
+
+## ⚙️ IaC
+- **ADV-IT — Ansible** — [YouTube-плейлист](https://www.youtube.com/watch?v=Ck1SGolr6GI&list=PLg5SS_4L6LYufspdPupdynbMQTBnZd31N&ab_channel=ADV-IT)
+
+## ☸️ Kubernetes (k8s)
+- **Slurm — Kubernetes для разработчиков** — [YouTube-плейлист](https://www.youtube.com/watch?v=Mw_rEH2pElw&list=PL8D2P0ruohOBSA_CDqJLflJ8FLJNe26K-&ab_channel=%D0%A1%D0%BB%D1%91%D1%80%D0%BC)
+- **Артур Крюков** — [YouTube-плейлисты](https://www.youtube.com/@OldPythonKAA/playlists)
+- **Helm** — [Habr](https://habr.com/ru/articles/769046/)
+- **Vault: база** — [Habr](https://habr.com/ru/companies/jetinfosystems/articles/762194/)
+- **Vault с k8s** — [Habr](https://habr.com/ru/companies/ru_mts/articles/880594/)
+- **ArgoCD** — [Habr](https://habr.com/ru/companies/kts/articles/723760/)
+
+## ☁️ Clouds
+- **ADV-IT — Terraform** — [YouTube-плейлист](https://www.youtube.com/watch?v=R0CaxXhrfFE&list=PLg5SS_4L6LYujWDTYb-Zbofdl44Jxb2l8&ab_channel=ADV-IT)
+- **Terraform в Yandex Cloud** — [YouTube](https://www.youtube.com/watch?v=y1eqR0xL1ZI&ab_channel=loftblog)
+------------------------------------------------------------------------------
 
 ---
 ## 🤝 Благодарности
