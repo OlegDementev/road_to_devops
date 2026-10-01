@@ -36,7 +36,7 @@ def find_repo_root(start: Path) -> Path:
 REPO_ROOT = find_repo_root(Path(__file__).resolve().parent)
 
 # Папки, для которых строим общее оглавление (имена папок верхнего уровня).
-FOLDERS = {"00_prepare", "01_git", "02_linux"}
+FOLDERS = {"02_linux"}
 
 # Имя файла-оглавления внутри каждой папки.
 TOC_FILENAME = "0.0_Оглавление.md"
@@ -119,27 +119,44 @@ def extract_chapter_number(filename: str) -> str:
 
 
 def get_file_title(file_path: Path) -> str:
-    """Первый заголовок '# ' вне код-блоков; из текста удаляется <a id=...> и номер."""
+    """Первый заголовок '# ' (устойчиво к BOM и разным пробелам).
+    Убирает <a id=...> и номер, подчёркивания → пробелы."""
     in_code = False
     try:
         with open(file_path, "r", encoding="utf-8") as f:
-            for line in f:
-                s = line.rstrip("\n")
-                stripped = s.lstrip()
+            for raw in f:
+                # убираем BOM и \r
+                line = raw.lstrip("\ufeff").rstrip("\n").rstrip("\r")
+                stripped = line.lstrip()
                 if stripped.startswith("```") or stripped.startswith("~~~"):
                     in_code = not in_code
                     continue
                 if in_code:
                     continue
-                st = s.strip()
-                if st.startswith("# "):
-                    st = re.sub(r'\s*<a\s+id="[^"]+"\s*></a>\s*$', "", st)
-                    title = st[2:].strip()
-                    title = re.sub(r"^\d+(?:\.\d+)*[\.\)\s]+", "", title).strip()
-                    return title
+                # заголовок h1: '#', '\t' или пробелы после решётки
+                m = re.match(r"^#\s+(.+?)\s*$", line.strip())
+                if not m:
+                    continue
+                title = m.group(1)
+                # убрать <a id="..."></a> в конце
+                title = re.sub(
+                    r'\s*<a\s+id="[^"]+"\s*>(?:\s*</a>)?\s*$',
+                    "",
+                    title,
+                    flags=re.IGNORECASE,
+                )
+                # убрать номер главы в начале
+                title = re.sub(r"^\d+(?:[\.\-]\d+)*[\.\)\_\-\s]+", "", title).strip()
+                # подчёркивания → пробелы
+                title = title.replace("_", " ")
+                return title
     except Exception:
         pass
-    return file_path.stem
+
+    # fallback: чистим имя файла тем же способом
+    fallback = file_path.stem.replace("_", " ")
+    fallback = re.sub(r"^\d+(?:[\.\-]\d+)*[\.\)\_\-\s]+", "", fallback).strip()
+    return fallback or file_path.stem
 
 
 def extract_local_toc(file_path: Path) -> str | None:
