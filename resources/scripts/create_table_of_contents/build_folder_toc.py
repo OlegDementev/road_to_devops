@@ -36,7 +36,7 @@ def find_repo_root(start: Path) -> Path:
 REPO_ROOT = find_repo_root(Path(__file__).resolve().parent)
 
 # Папки, для которых строим общее оглавление (имена папок верхнего уровня).
-FOLDERS = {"04_linux"}
+FOLDERS = {"00_prepare", "01_git", "02_sql", "03_networks", "04_linux"}
 
 # Имя файла-оглавления внутри каждой папки.
 TOC_FILENAME = "0.0_Оглавление.md"
