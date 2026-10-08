@@ -349,13 +349,13 @@ def main() -> int:
 
         result = write_folder_toc(folder, toc_md)
         if result == "created":
-            ok(f"создан {TOC_FILENAME}")
+            ok(f"создан         {TOC_FILENAME}")
             total_updated += 1
         elif result == "updated":
-            ok(f"обновлён {TOC_FILENAME}")
+            ok(f"обновлён      {TOC_FILENAME}")
             total_updated += 1
         elif result == "unchanged":
-            info(f"без изменений: {TOC_FILENAME}")
+            info(f"без изменений {TOC_FILENAME}")
             total_unchanged += 1
         else:
             err(f"{folder_name}: {result}")
@@ -365,9 +365,9 @@ def main() -> int:
     if total_updated:
         ok(f"Обновлено файлов: {total_updated}")
     if total_unchanged:
-        info(f"Без изменений: {total_unchanged}")
+        info(f"Без изменений:    {total_unchanged}")
     if all_warnings:
-        warn(f"Предупреждений: {len(all_warnings)}")
+        warn(f"Предупреждений:   {len(all_warnings)}")
         for folder_name, w in all_warnings:
             print(f"      {folder_name}: {w}")
     if total_errors:
