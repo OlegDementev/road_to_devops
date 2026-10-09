@@ -29,7 +29,7 @@ def find_repo_root(start: Path) -> Path:
 
 REPO_ROOT = find_repo_root(Path(__file__).resolve().parent)
 
-OUTPUT_DIR = REPO_ROOT / "helpers"
+OUTPUT_DIR = REPO_ROOT / "resources" / "helpers"
 OUTPUT_FILE = OUTPUT_DIR / "links.md"
 
 # Служебные папки. helpers/ исключён, чтобы скрипт не читал свой же отчёт.

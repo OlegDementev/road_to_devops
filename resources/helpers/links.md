@@ -38,8 +38,8 @@
 
 - [Текст ссылки](https://github.com)
 - [Логотип Git](https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png)
-- ![GitHub](https://github.githubassets.com/favicons/favicon-dark.png)
-- ![Up to Date](https://github.com/ikatyang/emoji-cheat-sheet/workflows/Up%20to%20Date/badge.svg)
+- [![GitHub](https://github.githubassets.com/favicons/favicon-dark.png)
+- [![Up to Date](https://github.com/ikatyang/emoji-cheat-sheet/workflows/Up%20to%20Date/badge.svg)
 - [Markdown синтаксис](https://stepik.org/course/253005/info)
 
 ---
