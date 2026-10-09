@@ -61,11 +61,12 @@ EXCLUDE_URL_PATTERNS: list[str] = [
 BLOCK_NAMES = {
     "00_prepare": "⚙️ Подготовительный блок",
     "01_git": "🌳 Блок Git",
-    "02_linux": "🐧 Блок Linux",
-    "03_networks": "🌐 Блок сети",
-    "04_docker": "🐳 Блок Docker",
-    "05_ci_cd": "🔁 Блок CI/CD",
-    "06_k8s": "☸️ Блок Kubernetes",
+    "02_sql": "🗄️ Блок SQL",
+    "03_networks": "🌐 Блок Networks",
+    "04_linux": "🐧 Блок Linux",
+    # "04_docker": "🐳 Блок Docker",
+    # "05_ci_cd": "🔁 Блок CI/CD",
+    # "06_k8s": "☸️ Блок Kubernetes",
 }
 
 # ======================= ЦВЕТНОЙ ВЫВОД =======================
